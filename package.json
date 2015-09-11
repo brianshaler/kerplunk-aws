@@ -1,0 +1,49 @@
+{
+  "name": "kerplunk-aws",
+  "displayName": "Amazon Web Services API",
+  "description": "Connect to the AWS API, currently only implementing SES for email notifications",
+  "version": "0.0.1",
+  "kerplunk": {
+    "permissions": {
+      "kerplunk-identity": {
+        "models": [
+          "Identity"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "kerplunk-plugin",
+    "kp:Utility",
+    "kp:Notifications"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./lib/aws.js",
+  "dependencies": {
+    "aws-sdk": "^2.2.0",
+    "lodash": "^3.10.0",
+    "react": "^0.13.3",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "glut": "0.0.1",
+    "glut-coffee-amdify": "0.0.0",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.3.1",
+    "mocha": "^2.3.2",
+    "should": "^7.1.0"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./lib ./public && gulp",
+    "test": "NODE_ENV=test mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianshaler/kerplunk-aws.git"
+  },
+  "license": "MIT",
+  "readme": "# kerplunk-aws\n\n[Kerplunk](https://github.com/brianshaler/kerplunk) plugin. Connect to the AWS API, currently only implementing SES for email notifications\n\n[![Build Status](https://travis-ci.org/brianshaler/kerplunk-aws.svg)](https://travis-ci.org/brianshaler/kerplunk-aws)\n[![npm version](https://img.shields.io/npm/v/kerplunk-aws.svg)](https://www.npmjs.com/package/kerplunk-aws)\n\n## LICENSE\n\n(MIT License)\n\nCopyright (c) 2015 Brian Shaler <licensing@brianshaler.com>\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+}
