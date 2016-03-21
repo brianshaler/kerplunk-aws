@@ -2,7 +2,7 @@
   "name": "kerplunk-aws",
   "displayName": "Amazon Web Services API",
   "description": "Connect to the AWS API, currently only implementing SES for email notifications",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "kerplunk": {
     "permissions": {
       "kerplunk-identity": {
